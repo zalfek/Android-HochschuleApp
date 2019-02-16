@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CampusActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="56dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/my_toolbar"
+            app:layout_constraintStart_toStartOf="@+id/my_toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/hs_icon_round" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hochschule HelperApp"
+            tools:layout_editor_absoluteX="122dp"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/prittwit" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/hsulm_campuss" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/eberhardt" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="15dp"
+        android:text="Eberhard-Finckh-Straße 11, 89075 Ulm"
+        android:textColor="@color/colorBlue"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.952" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="Albert-Einstein-Allee 55, 89081 Ulm"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="64dp"
+        android:text="Prittwitzstraße 10, 89075 Ulm"
+        android:textColor="@color/colorBlue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+</android.support.constraint.ConstraintLayout>
